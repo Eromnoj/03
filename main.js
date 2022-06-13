@@ -70,7 +70,7 @@ item3.addEventListener('mouseover', () => {
     setTimeout(() => {
       item3.classList.add('contactdown')
       item3.textContent = 'Close'
-    }, 2000)
+    }, 1000)
   }
 })
 item3.addEventListener('click', () => {

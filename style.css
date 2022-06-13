@@ -160,8 +160,8 @@ main {
     background-color: #d417b5;
   }
   header .navbar .falldown {
-    -webkit-animation: falldown 2s linear;
-            animation: falldown 2s linear;
+    -webkit-animation: falldown 1s linear;
+            animation: falldown 1s linear;
   }
   header .navbar .contactdown {
     position: relative;
@@ -358,9 +358,9 @@ main {
 .contact-anim {
   -webkit-transform: scaleX(1) scaleY(1);
           transform: scaleX(1) scaleY(1);
-  -webkit-transition: -webkit-transform 1s 2s;
-  transition: -webkit-transform 1s 2s;
-  transition: transform 1s 2s;
-  transition: transform 1s 2s, -webkit-transform 1s 2s;
+  -webkit-transition: -webkit-transform 1s 1s;
+  transition: -webkit-transform 1s 1s;
+  transition: transform 1s 1s;
+  transition: transform 1s 1s, -webkit-transform 1s 1s;
 }
 /*# sourceMappingURL=style.css.map */
