@@ -84,3 +84,105 @@ main
         box-shadow: inset 1px 1px 0px #E5E5E5,
         inset -1px -1px 0px #E5E5E5, 
         2px 2px 2px rgba(120, 128, 53, 0.8)
+
+      .item-1
+        background-color: rgb(56, 56, 180)
+        transform: rotate(2deg)
+      .item-2
+        background-color: rgb(230, 226, 20)
+        transform: rotate(-1deg)
+      .item-3
+        background-color: rgb(212, 23, 181)
+      .falldown
+        // transform: translateY(90vh)
+        animation: falldown 2s linear
+        // transition: transform 3s 1s
+      .contactdown
+        position: relative
+        top: 90vh
+      .contactup
+        animation: hikeup 1s linear
+
+@keyframes falldown
+  0%
+    transform: rotate(1deg)
+  10%
+    transform: rotate(-1deg)
+  20%
+    transform: rotate(1deg)
+  30%
+    transform: rotate(80deg)
+  40%
+    transform: translateY(0) rotate(20deg)
+  100%
+    transform: rotate(0deg) translateY(90vh)
+
+@keyframes hikeup
+  0%
+    transform: rotate(0deg) translateY(90vh)
+  10%
+    transform: translateY(0) rotate(20deg)
+  20%
+    transform: rotate(80deg)
+  30%
+    transform: rotate(1deg)
+  40%
+    transform: rotate(-1deg)
+  100%
+    transform: rotate(1deg)
+
+.contact
+  padding: 10px
+  background-color: #E5E5E5
+  border: solid 4px black
+  border-radius: 4px
+  box-shadow: 2px 2px 2px rgba(120, 128, 53, 0.8)
+  position: absolute
+  right: 20px
+  bottom: 120px
+  transform: scaleX(0) scaleY(0)
+  transition: transform 1s
+.form
+  &-form
+    display: flex
+    flex-direction: column
+  &-case
+    display: flex
+    flex-direction: column
+    margin-bottom: 10px
+  &-button
+    padding: 10px 5px
+    margin: 10px
+    margin-top: 0px
+    text-transform: uppercase
+    font-weight: bolder
+    border: solid 4px black
+    border-radius: 4px
+    background-color: rgb(105, 204, 174)
+    box-shadow: inset 1px 1px 0px #E5E5E5,
+    inset -1px -1px 0px #E5E5E5, 
+    2px 2px 2px rgba(120, 128, 53, 0.8)
+  &-label
+    text-align: center
+    padding: 10px 5px
+    margin: 10px
+    margin-top: 0px
+    text-transform: uppercase
+    font-weight: bolder
+    border: solid 4px black
+    border-radius: 4px
+    background-color: rgb(212, 23, 181)
+    box-shadow: inset 1px 1px 0px #E5E5E5,
+    inset -1px -1px 0px #E5E5E5, 
+    2px 2px 2px rgba(120, 128, 53, 0.8)
+  &-input
+    padding: 5px
+    border: solid 4px black
+    border-radius: 4px
+    box-shadow: inset 1px 1px 0px #E5E5E5,
+    inset -1px -1px 0px #E5E5E5, 
+    2px 2px 2px rgba(120, 128, 53, 0.8)
+
+.contact-anim
+  transform: scaleX(1) scaleY(1)
+  transition: transform 1s 2s
