@@ -85,10 +85,10 @@ item3.addEventListener('click', () => {
       item3.classList.remove('contactdown')
       item3.classList.remove('falldown')
       item3.classList.add('contactup')
-    }, 1000)
+    }, 500)
     setTimeout(() => {
       item3.classList.remove('contactup')
-    }, 2000)
+    }, 1500)
   }
 })
 
