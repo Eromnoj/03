@@ -70,6 +70,8 @@ item3.addEventListener('mouseover', () => {
     setTimeout(() => {
       item3.classList.add('contactdown')
       item3.textContent = 'Close'
+      item3.style.padding = '10px 31.5px'
+
     }, 1000)
   }
 })
@@ -78,6 +80,7 @@ item3.addEventListener('click', () => {
 
     contact.classList.remove('contact-anim')
     item3.textContent = 'Contact'
+    item3.style.padding = '10px 18px'
     setTimeout(() => {
       item3.classList.remove('contactdown')
       item3.classList.remove('falldown')
