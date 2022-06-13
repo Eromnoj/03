@@ -66,26 +66,37 @@ item3.addEventListener('mouseover', () => {
   if (item3.textContent !== 'Close') {
 
     item3.classList.add('falldown')
-    contact.classList.add('contact-anim')
+    contact.classList.add('contact-anim-open')
+    contact.classList.remove('contact-anim-close')
     setTimeout(() => {
+      contact.classList.remove('contact-closed')
       item3.classList.add('contactdown')
+
       item3.textContent = 'Close'
       item3.style.padding = '10px 31.5px'
 
     }, 1000)
+
+    setTimeout(() => contact.classList.add('contact-fullScale'), 1100)
   }
 })
 item3.addEventListener('click', () => {
   if (item3.textContent !== 'Contact') {
 
-    contact.classList.remove('contact-anim')
+    contact.classList.remove('contact-anim-open')
+    contact.classList.add('contact-anim-close')
+    contact.classList.remove('contact-fullScale')
+
+
     item3.textContent = 'Contact'
     item3.style.padding = '10px 18px'
+    setTimeout(() => contact.classList.add('contact-closed'), 490)
     setTimeout(() => {
       item3.classList.remove('contactdown')
       item3.classList.remove('falldown')
       item3.classList.add('contactup')
     }, 500)
+
     setTimeout(() => {
       item3.classList.remove('contactup')
     }, 1500)
